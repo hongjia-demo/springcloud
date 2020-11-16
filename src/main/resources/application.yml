@@ -1,0 +1,9 @@
+server:
+  port: 8100
+  eureka:
+    instance:
+    ##注册中心地址
+    ip-address: 127.0.0.1
+  client:
+    service-url:
+      defaultZone: http//${eureka.instance.hostname}:${server.port}/eureka/
